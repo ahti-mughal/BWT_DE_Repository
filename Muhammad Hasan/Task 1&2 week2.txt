@@ -1,0 +1,10 @@
+Task # 1
+Please download and attach Northwind database into your SSMS
+
+DONE
+
+Task # 2
+Please Fork this repo and add a folder with you name in it.
+then create a PR
+
+DONE
