@@ -1,0 +1,16 @@
+what is SQL?
+
+SQL (Structured Query Language) is a programming language used to manage 
+and manipulate data stored in relational databases. 
+SQL is used to create, modify, and retrieve data from databases. 
+Here is a simple example of SQL query:
+
+SELECT * FROM customers WHERE age > 25;
+
+This query selects all the columns from the customers table where the age is greater than 25.
+The * is a wildcard that selects all columns, and WHERE is a clause that filters 
+the results based on a specified condition.
+
+SQL is widely used in various industries such as finance, healthcare, education,
+and e-commerce to manage and organize data efficiently.
+
