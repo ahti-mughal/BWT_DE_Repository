@@ -34,7 +34,7 @@ UPDATE Student SET age=19  WHERE id>2;
 /* DROP TABLE command to delete complete table but it would remove complete table structure 
 form the database and you would need to re-create this table once again if you wish you store some data.*/
 TRUNCATE TABLE Employe;
-                                  /*--------------------------------------*/
+                                  /*-----------------------------------------*/
 
                                   /*Task 8*/
 /*  1 - Write an SQL query to insert multiple rows into a table using a single INSERT statement.*/
