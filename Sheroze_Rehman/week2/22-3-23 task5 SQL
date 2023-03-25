@@ -1,0 +1,11 @@
+SQL has various datatypes that can be used to define the type of data that can be stored in a database table. Here are a few examples of SQL datatypes:
+
+INTEGER: This datatype is used to store whole numbers without decimal places. For example, the age of a person can be stored as an integer.
+
+VARCHAR: This datatype is used to store variable-length character strings. For example, the name of a person can be stored as a VARCHAR.
+
+DATE: This datatype is used to store dates. For example, the date of birth of a person can be stored as a DATE.
+
+DECIMAL: This datatype is used to store numbers with decimal places. For example, the salary of an employee can be stored as a DECIMAL.
+
+BOOLEAN: This datatype is used to store true/false values. For example, a column in a table indicating whether a product is in stock or not can be defined as BOOLEAN.
