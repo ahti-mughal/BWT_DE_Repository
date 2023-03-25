@@ -1,1 +1,0 @@
-MEDIUM = https://medium.com/@armannizar31/data-engineering-the-backbone-of-modern-business-intelligence-19e328af323d
