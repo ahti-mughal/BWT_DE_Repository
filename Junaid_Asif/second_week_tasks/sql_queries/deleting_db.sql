@@ -1,6 +1,0 @@
-DROP DATABASE jd;
-
-
-
-
-
