@@ -1,0 +1,71 @@
+Task #5
+
+
+Data Types in MySQL
+
+1) String Data Types
+
+.char(size)
+.varchar(size)
+.binary(size)
+.varbinary(size)
+.tinytext
+.text(size)
+.mediumtext
+.longtext
+.enum(val1,val2,...) 
+.set(val1,val2,...)
+
+Example:
+ create table sdb (firstName varchar(15))
+
+
+2) Numeric Data Types
+.bit(size)
+.tinyint(size)
+.bool
+.boolean
+.smallint(size)
+.mediumint(size)
+.int(size)
+.integer(size)
+.bigint(size)
+.float(size,d)
+.float(p)
+.double(size,d)
+.double precision(size,d)
+.decimal(size,d)
+.dec(size,d)
+
+Example
+ alter table sdb add rollNo int(3);
+
+
+3)Date and time data types
+
+.date
+.datetime(fsp)
+.timestamp(fsp)
+.time(fsp)
+.year
+
+
+Example 
+alter table sdb add admissionDate date;
+
+
+
+Task #6
+
+Creating table
+
+query: create table byteWise (name varchar(50), internshipStartDate date NOT NULL) values ("Saddar U Din Babar",'13/03/2023');
+
+Altering Table
+ 
+query: alter table byteWise add track varchar(30) values ("Data Engineerign Track");
+
+
+Deleting table
+
+query: drop table byteWise;
