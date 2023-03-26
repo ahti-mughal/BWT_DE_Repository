@@ -1,0 +1,38 @@
+Q) WHAT IS SQL?
+ANS: 
+Structured query language SQL is a programming language for storing and processing information in a relational database. A relational database stores information in tabular form, with rows and columns representing different data attributes and the various relationships between the data values.
+
+Q) WHAT IS DDL?
+ANS: 
+DDL stands for Data Definition Language which is a subset of SQL that is used to define and manage the structure of a database. DDL commands are used to create, modify, and delete database objects such as tables, indexes, constraints, and views.
+
+Some common examples of DDL commands include:
+CREATE TABLE
+ALTER TABLE
+DROP TABLE
+
+Q) WHAT IS DML?
+ANS: 
+DML stands for Data Manipulation Language which is a subset of SQL used to manipulate data stored in a database. DML commands are used to insert, update, and delete data from tables in the database.
+
+Some common examples of DML commands include:
+SELECT
+INSERT 
+UPDATE 
+DELETE
+
+Q) WHAT IS DQL?
+ANS: 
+DQL stands for Data Query Language which is a subset of SQL used to retrieve data from a database. DQL commands are used to perform SELECT operations on one or more tables in the database and retrieve data based on specific conditions.
+
+Some common examples of DQL commands include:
+SELECT: 
+FROM: 
+WHERE: 
+ORDER 
+GROUP BY:
+HAVING:
+
+
+
+
