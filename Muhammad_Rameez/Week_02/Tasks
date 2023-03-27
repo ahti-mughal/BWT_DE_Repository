@@ -34,6 +34,10 @@ Practice file is attached with the name of Task 06.sql
 
 Task 07 :
 
-Practice file is attached with the name of Task 07.sqll
+Practice file is attached with the name of Task 07.sql
+
+The main difference between DELETE and TRUNCATE is that DELETE is a DML command, which can be used to delete selected rows from a table, whereas TRUNCATE is a DDL command, which can be used to delete all the rows from a table. Furthermore, with DELETE, the rows can be individually selected and deleted, and with TRUNCATE, all the rows are deleted at once.
 
 Task 08 :
+
+Answer file has been attached with the name of Task 08.sql
