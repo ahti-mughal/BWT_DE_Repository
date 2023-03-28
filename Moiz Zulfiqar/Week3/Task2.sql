@@ -21,7 +21,7 @@ and order date of all orders that do not have a customer ID, ordered by order da
 -- ORDER BY OrderDate; -- sorts the data in ascending order by the specified column: OrderDate.
 
 /*
-3 - Retrieve the category names of all products, as well as the countries to which orders have been shipped, without any duplicates.
+3. Retrieve the category names of all products, as well as the countries to which orders have been shipped, without any duplicates.
 */
 
 SELECT DISTINCT CategoryName, ShipCountry -- selects the distinct combinations of CategoryName and ShipCountry.
