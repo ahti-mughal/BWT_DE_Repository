@@ -1,0 +1,7 @@
+Task # 3:
+
+After you complete these topics, please answer the following questions in your document:
+
+- Can a database be used as DWH?
+- Major differences between structured and Un-structured data.
+- What are the duties of a data engineer? (high-level)
