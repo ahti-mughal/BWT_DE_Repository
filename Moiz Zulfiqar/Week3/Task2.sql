@@ -20,6 +20,10 @@ and order date of all orders that do not have a customer ID, ordered by order da
 -- WHERE CustomerID IS NULL -- filters the data based on the specified condition: CustomerID IS NULL (orders without a customer ID).
 -- ORDER BY OrderDate; -- sorts the data in ascending order by the specified column: OrderDate.
 
+/*
+3 - Retrieve the category names of all products, as well as the countries to which orders have been shipped, without any duplicates.
+*/
+
 SELECT DISTINCT CategoryName, ShipCountry -- selects the distinct combinations of CategoryName and ShipCountry.
 FROM products -- specifies the tables to be joined: products, categories, order_details, and orders.
 JOIN categories ON products.CategoryID = categories.CategoryID 
