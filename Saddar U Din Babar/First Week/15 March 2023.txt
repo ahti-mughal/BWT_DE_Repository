@@ -1,0 +1,109 @@
+Task#2
+
+What is Data Mart?
+
+->It is smaller part of data warehouse.
+->It stores specific type of data like only the data of the products sold in a particular year.
+->It is subset of data warehouse.
+
+
+
+How it differs from data warehouse?
+->It is a database that stores data of an organization in the organized way.
+->It stores all the data of an organization like sales data, employees data etc.
+
+
+What is data lakehouse?
+
+Data lakehouse compaired to data warehouse can:
+->Video, audio and text file.
+->Support data science and ML work load.
+->Have support for both streaming and ELT.
+->Work with many open source format.
+->Data will generally reside in a data lake or blob stores.
+
+
+
+What is data mesh?
+->A hot topic in enterprise software, data mesh is a new approach to thinking about data based on a distributed architecture for data management. 
+The idea is to make data more accessible and available to business users by directly connecting data owners, data producers, and data consumers. 
+Data mesh aims to improve business outcomes of data-centric solutions as well as drive adoption of modern data architectures.
+
+
+
+
+Difference between Data Lake and Data warehouse?
+
+Data Lake:
+1> Massive volumes of structured and unstructured data like ERP transactions and call logs can be stored cost affectively.
+
+2> Data is available for use far faster by keeping it in a raw state.
+
+3> A broader range of data can be analyzed in new ways to gain unexpected and previously unavailable insights.
+
+Data Warehouse:
+->Little or no data prep needed, making it far easier for analysts and business users to access and analyze this data.
+->Accurate and complete data is available more quickly, so businesses can turn information into insight faster.
+->Unified, harmonized data offers a single source of truth, building trust in data insights and decision making across business lines.
+
+
+
+OLTP VS OLAP
+
+
+The two terms look similar but refer to different kind of systems. Online Transaction Processing (OLTP) caputes, 
+stores and processes data from transactions in real time.
+Online Analytical Processing (OLAP) uses complex queries to analyze aggregated historiacl data from OLTP systems.
+
+
+
+Task #3
+
+Can a database be used as data warehouse?
+
+A database can be used as a data warehouse, a dedicated data warehouse platform is generally a better choice if you need to perform complex queries and 
+analysis on large volumes of data from multiple sources.
+
+
+
+Key differences between structured and unstructured data:
+
+
+Structured Data:
+
+1) It is based on a relational database.
+2) Structured data is less flexible and schema-dependent.
+3) It is hard to scale database schema.
+4) It is very robust.
+
+
+Unstructured data:
+
+1) It is based on character and binary data.
+2) There is an absence of schema, so it is more flexible.
+3) It is more scalable.
+4) It is less robust.
+
+
+
+
+Data engineer roles and responsibilities:
+
+Here is the list of roles and responsibilities , data engineer are expected to perform:
+
+1. Work on Data Architecture:
+ They use a systematic approach to plan, create, and maintain data architectures while also keeping it aligned with business requirements.
+2. Collect Data:
+ Before initiating any work on the database, they have to obtain data from the right sources. After formulating a set of dataset processes, data engineers store
+ optimized data.
+3. Conduct Research:
+ Data engineers conduct research in the industry to address any issues that can arise while trackling a business problem.
+4. Improve Skills:
+ Data engineers don't rely on theoritical database concepts alone. They must have the knowledge and prowess to work in any development environment regardless of their
+ programming language.
+5. Create models and identify patters:
+ Data engineers use a descriptive data model for data aggregation to extract historical insights.
+6. Automate Tasks:
+ Data engineers dive into data and pinpoint tasks where manual participation can be eliminated with automation.
+ 
+ 
