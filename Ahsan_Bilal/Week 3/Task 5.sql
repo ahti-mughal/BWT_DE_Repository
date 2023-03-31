@@ -100,3 +100,32 @@ INNER JOIN [Order Details] od ON o.OrderID = od.OrderID
 WHERE o.OrderDate BETWEEN '1997-01-01' AND '1997-12-31'
 GROUP BY c.CustomerID, c.CompanyName
 HAVING COUNT(o.OrderID) > 10 AND SUM(od.Quantity*od.UnitPrice) > 10000;
+
+/*##################################
+------------ Index -------------
+####################################*/
+
+
+--========= Clustered Create Index ==========
+
+CREATE CLUSTERED INDEX IX_Orders_OrderID ON Orders (OrderID);
+
+--========= NonClustered Create Index =======
+
+CREATE NONCLUSTERED INDEX IX_Customers_ContactName ON Customers (ContactName);
+
+
+--========= Alter Indexes ================
+
+ALTER INDEX IX_Customers_ContactName ON Customers
+ADD (City VARCHAR(20));
+
+--========= Drop Indexes ================
+
+DROP INDEX IX_Orders_OrderID ON Orders;
+
+--========= Using Indexes ================
+
+SELECT *
+FROM Customers WITH(INDEX(IX_Customers_ContactName))
+WHERE ContactName LIKE 'M%';
