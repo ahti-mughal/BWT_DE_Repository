@@ -1,0 +1,44 @@
+-- 29 March 2023
+
+-- task #5
+
+-- • Single Row Sub Queries 
+
+
+
+select * from student where rollNo=
+
+
+(select rollNo from course where courseName = 'DSA' );
+
+
+
+-- Multi Row Sub Queries
+
+ 
+select * from student where rollNo = any
+ 
+(select rollNo from course group By rollNo desc);
+ 
+
+
+ -- nested sub queries
+ 
+
+select * from student where rollNo = any 
+ 
+( select rollNo from course where serialNo=any
+ 
+(select empNo from employee group by empNo));
+ 
+ 
+
+-- corelated subqueries
+ 
+ 
+
+select * from student where rollNo IN 
+ 
+(
+   select rollNo from course where courseId>70
+ );
