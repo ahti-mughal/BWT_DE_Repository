@@ -1,0 +1,13 @@
+Numeric data types - used to store numeric values such as integers, decimals, etc. Examples include INT, BIGINT, FLOAT, DECIMAL, NUMERIC.
+
+Character and string data types - used to store character and string values. Examples include CHAR, VARCHAR, TEXT, NCHAR, NVARCHAR.
+
+Date and time data types - used to store date and time values. Examples include DATE, TIME, TIMESTAMP, INTERVAL.
+
+Boolean data type - used to store true/false values. The Boolean data type is represented by the keyword BOOLEAN.
+
+Binary data types - used to store binary data such as images, audio files, etc. Examples include BINARY, VARBINARY, BLOB.
+
+Other data types - include XML, JSON, and other custom-defined data types.
+
+It's important to choose the appropriate data type for each column in your table, based on the data it will store and the operations that will be performed on that data. Choosing the right data type can help optimize storage, performance, and data integrity.
