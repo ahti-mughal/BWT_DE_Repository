@@ -1,0 +1,1 @@
+I have downloaded and attached Northwind database into my SSMS
