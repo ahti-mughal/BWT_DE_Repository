@@ -1,0 +1,6 @@
+Task # 1:
+Please familiarize yourself with the basics of Data Engineering which include the following topics:
+- Big Data
+- Data Lake
+- Database
+- Data Warehouse

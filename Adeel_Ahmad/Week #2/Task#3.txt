@@ -1,0 +1,8 @@
+*Task#3:* 
+SQL stands for Structured Query Language, and it is a programming language used to manage and manipulate data in a relational database. SQL consists of several different types of commands, including DDL, DML, and DQL.
+
+DDL stands for Data Definition Language, and it is used to define the structure of a database, including creating and altering tables, views, and indexes. Examples of DDL commands include CREATE, ALTER, and DROP.
+
+DML stands for Data Manipulation Language, and it is used to manipulate data within a database. Examples of DML commands include INSERT, UPDATE, and DELETE.
+
+DQL stands for Data Query Language, and it is used to query data from a database. The SELECT statement is the most common DQL command used to retrieve data from a database.
