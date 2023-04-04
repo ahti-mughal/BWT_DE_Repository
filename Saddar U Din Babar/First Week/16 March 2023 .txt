@@ -1,0 +1,151 @@
+Task #4 
+
+
+What is ETL(Extract Transform Load)?
+
+As the amount of data, data sources, and data types at organizations grow, the importance of making use of that data in analytics, 
+data science and machine learning initiatives to derive business insights grows as well. The need to prioritize these initiatives 
+puts increasing pressure on the data engineering teams because processing the raw, messy data into clean, fresh, reliable data is a 
+critical step before these initiatives can be pursued. ETL, which stands for extract, transform, and load, is the process data engineers 
+use to extract data from different sources, transform the data into a  usable and trusted resource, and load that data into the systems 
+end-users can access and use downstream to solve business problems.
+
+
+How Does ETL Work?
+Extract
+The first step of this process is extracting data from the target sources that are usually heterogeneous such as business systems, APIs, sensor data, 
+marketing tools, and transaction databases, and others. As you can see, some of these data types are likely to be the structured outputs of widely used 
+systems, while others are semi-structured JSON server logs.
+
+There are different ways to perform the extraction: Three Data Extraction methods:
+
+Partial Extraction – The easiest way to obtain the data is if the if the source system notifies you when a record has been changed
+
+Partial Extraction (with update notification) - Not all systems can provide a notification in case an update has taken place; however, 
+they can point to those records that have been changed and provide an extract of such records.
+
+Full extract – There are certain systems that cannot identify which data has been changed at all. In this case, a full extract is 
+the only possibility to extract the data out of the system. This method requires having a copy of the last extract in the same format 
+so you can identify the changes that have been made.
+
+Transform
+The second step consists of transforming the raw data that has been extracted from the sources into a format that can be used by different applications. 
+In this stage, data gets cleansed, mapped and transformed, often to a specific schema, so it meets operational needs. This process entails several types 
+of transformation that ensure the quality and integrity of data Data is not usually loaded directly into the target data source, but instead it is common 
+to have it uploaded into a staging database. This step ensures a quick roll back in case something does not go as planned. 
+During this stage, you have the possibility to generate audit reports for regulatory compliance, or diagnose and repair any data issues.
+
+Load
+Finally, the load function is the process of writing converted data from a staging area to a target database, which may or may not have previously existed. 
+Depending on the requirements of the application, this process may be either quite simple or intricate. 
+Each of these steps can be done with ETL tools or custom code.
+
+
+
+
+What is ELT(Extract Load Transform)?
+
+Extract, Load, Transform (ELT) is a data integration process for transferring raw data from a source server to a data system (such as a data warehouse or data lake) 
+on a target server and then preparing the information for downstream uses.
+
+ELT is comprised of a data pipeline with three different operations being performed on data:
+
+The first step is to Extract the data. Extracting data is the process of identifying and reading data from one or more source systems, 
+which may be databases, files, archives, ERP, CRM or any other viable source of useful data.
+
+The second step for ELT, is to Load the extract data. Loading is the process of adding the extracted data to the target database.
+
+The third step is to Transform the data. Data transformation is the process of converting data from its source format to the format required for analysis. Transformation is typically based on rules that define how the data should be converted for usage and analysis in the target data store. Although 
+transforming data can take many different forms, it frequently involves converting coded data into usable data using code and lookup tables.
+
+Examples of transformations include:
+
+Replacing codes with values
+Aggregating numerical sums
+Applying mathematical functions
+Converting data types
+Modifying text strings
+Combining data from different tables and databases
+
+How ELT works?
+
+ELT is a variation of the Extract, Transform, Load (ETL), a data integration process in which transformation takes place on an intermediate server before it is 
+loaded into the target. In contrast, ELT allows raw data to be loaded directly into the target and transformed there.
+
+With an ELT approach, a data extraction tool is used to obtain data from a source or sources, and the extracted data is stored in a staging area or database. 
+Any required business rules and data integrity checks can be run on the data in the staging area before it is loaded into the data warehouse. 
+All data transformations occur in the data warehouse after the data is loaded.
+
+
+Three Tier Architecture in Data Engineering:
+
+Data Warehouses usually have a three-level (tier) architecture that includes:
+
+1) Bottom Tier (Data Warehouse Server)
+2) Middle Tier (OLAP Server)
+3) Top Tier (Front end Tools).
+
+Bottom Tier:
+A bottom-tier that consists of the Data Warehouse server, which is almost always an RDBMS. 
+It may include several specialized data marts and a metadata repository.
+
+
+Middle Tier:
+A middle-tier which consists of an OLAP server for fast querying of the data warehouse.
+
+The OLAP server is implemented using either
+
+(1) A Relational OLAP (ROLAP) model, i.e., an extended relational DBMS that maps functions on multidimensional data to standard relational operations.
+
+(2) A Multidimensional OLAP (MOLAP) model, i.e., a particular purpose server that directly implements multidimensional information and operations.
+
+
+Top Tier:
+A top-tier that contains front-end tools for displaying results provided by OLAP, as well as additional tools for data mining of the OLAP-generated data.
+
+
+
+
+3 ETL Tools:
+Following are the tool that are used in ETL:
+1) Hadoop
+2) Apache Airflow
+3) Microsoft SQL Server Integration Services (SSIS)
+
+
+
+
+
+
+Task #5
+
+What is historical load?
+
+Historical load refers to the process of loading historical or archived data into a data storage system. 
+This data may be from a variety of sources, including transactional systems, logs, external files, or other 
+sources of data that were not previously captured or stored.
+Additionally, the historical load process must be designed to optimize performance and minimize any impact on 
+other data processing and analysis tasks.
+
+
+What is full load?
+
+Full Load in ETL is loading ALL the data from the source to the destination. A target table is truncated before loading everything from the source. 
+That's why this technique is also known as Destructive Load. In full load first we truncate the destination table and then we load all the data 
+from source to destination.
+
+
+What is incremental load? 
+
+Suppose if the file is very large, for example there are 200m to 500m records to load, so is not possible to load much amount of data in a very small 
+time because some time we have very small duration so we can just update the data during night-time and in the night-time, there are very limited hours, 
+and the file is very huge it is not possible to just reload everything.
+
+In those scenarios where the actual updated records are very less but the whole data is very huge, we go with the incremental load, or you can say differential load.
+
+In the incremental load, we figure out how many are the once which can be updated to destination table and how many records are the once in the 
+source file or source table those can be inserted to the destination table, we just update or insert to the destination table, so this is called 
+incremental or differential load.
+
+The ETL Incremental Loading technique is a fractional loading method. It reduces the amount of data that you add or change and that may need to
+be rectified in the event of any irregularity. Because less data is reviewed, it also takes less time to validate the data and review changes.
