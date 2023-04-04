@@ -1,0 +1,6 @@
+Task # 4:
+
+- What is ETL? in detail.
+- What is ELT? in detail.
+- 3 Tier Architecture in DE
+- ETL Tools (any 3)
