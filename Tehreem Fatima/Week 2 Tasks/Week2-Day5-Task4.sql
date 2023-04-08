@@ -19,3 +19,5 @@ GO
 --droping a database
 
 DROP DATABASE bytewise;
+
+

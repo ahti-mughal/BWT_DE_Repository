@@ -26,11 +26,11 @@ Select CompanyName,
 ContactName,
 ContactTitle,
 city,
-case city 
+(case city 
 when 'Berlin' then 'Germany'
 when 'London' then 'UK'
 else City
-end
+end) 
 from Customers
 
  
@@ -38,20 +38,20 @@ from Customers
 
 --1. Write a query to retrieve the product name, unit price, and discount for all orders in the "Order Details" table, and apply a discount of 10% if the unit price is greater than or equal to 50.
 select Productname,o.UnitPrice,p.UnitPrice, o.discount,
-case when o.Unitprice>=50 then  0.1
+(case when o.Unitprice>=50 then  o.UnitPrice*0.9
 else 0
-end
+end) as discounted_Value
 from Products as p
-inner join [Order Details] as o on o.UnitPrice=p.UnitPrice;
+inner join [Order Details] as o on o.ProductID=p.ProductID;
 
 
 
 
 --2.Write a query to retrieve the product name, unit price, and supplier name for all products in the "Products" table, and apply a case statement to display "Not available" if the supplier name is null.
 
-select p.ProductName,p.UnitPrice, s.ContactName,
-case when ContactName is null then 'Not Available'
-else contactname
-end
+select p.ProductName,p.UnitPrice,
+(case when s.SupplierID is null then 'Not Available'
+else  ContactName
+end) as New_column
 from Suppliers as  s
 inner join Products as p on s.SupplierID=p.SupplierID
