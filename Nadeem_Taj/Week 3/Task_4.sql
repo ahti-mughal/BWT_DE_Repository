@@ -1,5 +1,6 @@
 use Northwind
 
+
 -- 1 - Write a query to show a list of customers and their corresponding orders.
 select c.customerid, c.CompanyName, o.orderid, o.orderdate from 
 Customers as c
