@@ -1,0 +1,26 @@
+Task 1   Date: 14/03/2023 
+
+What is big data?
+
+It is mostly unstructured data.
+It is measured in peta bytes and exa bytes
+It is globally present and is distributed unlike small data that is present locally  and is centrized
+It increases exponently 
+Almost 90% of the data that is produced each day is unstructured and is counted into big data term
+The handle this huge amount of data tools like hadoop are used. SQL or Oracle can be used to handle the structured data
+
+
+What is database?
+
+A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS). Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system, often shortened to just database.
+
+
+What is data warehouse?
+
+Collection of past data that can be used for future decisions.
+A data warehouse is a type of data management system that is designed to enable and support business intelligence (BI) activities, especially analytics. Data warehouses are solely intended to perform queries and analysis and often contain large amounts of historical data. The data within a data warehouse is usually derived from a wide range of sources such as application log files and transaction applications.
+
+
+What is data lake?
+A data lake is centerliszed repository for structured and unstructured data storage.
+Data lakes could be used to store raw data as is without any structure

@@ -1,0 +1,9 @@
+Task # 2:
+
+Familiarize yourself with the following topics:
+
+- Data Marts
+- Data Lakehouse
+- data Mesh
+- DWH vs Data Lake
+- OLTP vs OLAP
