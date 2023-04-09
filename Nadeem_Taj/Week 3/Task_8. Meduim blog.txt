@@ -1,0 +1,7 @@
+I share my experience and leaning in the form blog. 
+you can check them with given links
+https://medium.com/@nadeemtaj407/what-is-sql-73b09f5f8cc4 
+https://medium.com/@nadeemtaj407/what-is-data-type-b74d02769dc8
+https://medium.com/@nadeemtaj407/the-art-of-combining-data-sql-joins-explained-605067532d92
+
+these are short and concise blogs, I will share my next blog about Database
