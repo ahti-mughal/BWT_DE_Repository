@@ -35,7 +35,8 @@
 # name = 'My Name'
 # age = float(21)
 # height = str(9)
-
+# greet = bool('hello')
+# print(greet)
 # print('My name is ' + str(name) + " My age is " +
 #       str(age) + ' My height is ' + height)
 
@@ -49,11 +50,51 @@
 # print(name[-2])
 
 # =================== String functions =============================
-import math
-name = "Muhammad Rameez"
+# import math
+# name = "Muhammad Rameez "
+# hello = " Hello, World! "
 
 # print(name.capitalize())
 # print(name.lower())
-print(name.upper())
-# print(name.index(5))
-# print(name.split(' ')[0])
+# print(name.upper())
+# print(hello.strip())
+# print(name.index('u'))
+# print(name.split(' ')[1])
+
+# =================== Comparission Operators =============================
+# print(100 < 90)  # false
+# print(10 == 9)  # false
+# print(10 > 9)  # true
+
+# =================== Operators =============================
+
+# a = 5
+# b = 10
+
+# print(a+b)
+# print(b-a)
+# print(b/a)
+# print(b*a)
+
+# =================== List =============================
+fruits = ["apple", "banana", "cherry"]
+vegetables = ["potato", "tomato", "carrot", "radish"]
+# print(fruits)
+# print(fruits[0])
+# print(fruits[0:])
+# print(fruits[0:1])
+# fruits.extend(vegetables)
+# # print(fruits)
+
+# fruits.append("apples")
+# fruits.insert(2, 'mango')
+# fruits.reverse()
+# count = fruits.count('apple')
+# fruits.pop()
+# fruits.sort()
+# fruits.remove('apples')
+# fruits.clear()
+# print(fruits)
+# print(count)
+
+# =================== List =============================
