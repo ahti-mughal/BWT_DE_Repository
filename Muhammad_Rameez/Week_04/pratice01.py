@@ -79,6 +79,7 @@
 # =================== List =============================
 fruits = ["apple", "banana", "cherry"]
 vegetables = ["potato", "tomato", "carrot", "radish"]
+# fruits_price = [10, 23, 43, 34, 12, 45, 67]
 # print(fruits)
 # print(fruits[0])
 # print(fruits[0:])
@@ -94,7 +95,13 @@ vegetables = ["potato", "tomato", "carrot", "radish"]
 # fruits.sort()
 # fruits.remove('apples')
 # fruits.clear()
-# print(fruits)
+print(fruits)
 # print(count)
 
-# =================== List =============================
+# =================== Loop =============================
+# for item in fruits:
+#     print(f'{item} is in the list')
+
+for i in fruits:
+    print(f"The price of {fruits.n=} {fruits_price[i]} RS")
+    i += 1
