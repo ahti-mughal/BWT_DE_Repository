@@ -77,8 +77,8 @@
 # print(b*a)
 
 # =================== List =============================
-fruits = ["apple", "banana", "cherry"]
-vegetables = ["potato", "tomato", "carrot", "radish"]
+# fruits = ["apple", "banana", "cherry"]
+# vegetables = ["potato", "tomato", "carrot", "radish"]
 # fruits_price = [10, 23, 43, 34, 12, 45, 67]
 # print(fruits)
 # print(fruits[0])
@@ -105,7 +105,20 @@ vegetables = ["potato", "tomato", "carrot", "radish"]
 # for i in fruits:
 #     print(f"The price of {fruits.price} and {fruits_price[i]} RS")
 #     i += 1
+
 table = input('Enter the table number')
 
-for i in range(1, 10):
-    print(f'{table} x {i} = {int(table)*int(i)}')
+# for i in range(1, 10):
+#     print(f'{table} x {i} = {int(table)*int(i)}')
+
+# =================== Conditional Statement =============================
+# grade = input('Enter your marks in Maths')
+
+# if (int(grade) < 50):
+#     print('Your Grade is C')
+# elif (int(grade) > 50 & int(grade) < 70):
+#     print('Your Grade is B')
+# elif (int(grade) > 70 & int(grade) < 80):
+#     print('Your Grade is A')
+# elif (int(grade) > 80):
+#     print('Your Grade is A+')
