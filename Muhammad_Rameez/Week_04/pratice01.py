@@ -95,13 +95,17 @@ vegetables = ["potato", "tomato", "carrot", "radish"]
 # fruits.sort()
 # fruits.remove('apples')
 # fruits.clear()
-print(fruits)
+# print(fruits)
 # print(count)
 
 # =================== Loop =============================
 # for item in fruits:
 #     print(f'{item} is in the list')
 
-for i in fruits:
-    print(f"The price of {fruits.n=} {fruits_price[i]} RS")
-    i += 1
+# for i in fruits:
+#     print(f"The price of {fruits.price} and {fruits_price[i]} RS")
+#     i += 1
+table = input('Enter the table number')
+
+for i in range(1, 10):
+    print(f'{table} x {i} = {int(table)*int(i)}')
