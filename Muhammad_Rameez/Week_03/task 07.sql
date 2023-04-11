@@ -25,3 +25,4 @@ ORDER BY
     WHEN category_id is not null then category_id
     ELSE product_name
 END);
+
