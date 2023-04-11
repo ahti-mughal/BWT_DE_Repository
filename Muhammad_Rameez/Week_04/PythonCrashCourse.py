@@ -117,7 +117,7 @@ fruits.extend(vegetables)
 # print(fav)
 # print(type(fav[3]) == int)
 
-## ===== Data Type Detection in a list ====== (ref: Loops discuss below)
+## ===== Data Type Detection in a tuple ====== (ref: Loops discuss below)
 # for i in range(len(fav)):
 #     if type(fav[i]) == int:
 #         print(f"The number {fav[i]} is exist in the tuple")
