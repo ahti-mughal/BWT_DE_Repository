@@ -77,14 +77,14 @@
 # print(b*a)
 
 ## =================== List =============================
-fruits = ["apple", "banana", "cherry"]
-vegetables = ["potato", "tomato", "carrot", "radish"]
-fruits_price = [10, 23, 43, 34, 12, 45, 67]
+# fruits = ["apple", "banana", "cherry"]
+# vegetables = ["potato", "tomato", "carrot", "radish"]
+# fruits_price = [10, 23, 43, 34, 12, 45, 67]
 # print(fruits)
 # print(fruits[0])
 # print(fruits[0:])
 # print(fruits[0:1])
-fruits.extend(vegetables)
+# fruits.extend(vegetables)
 # # print(fruits)
 
 # fruits.append("apples")
@@ -204,4 +204,265 @@ fruits.extend(vegetables)
 #     print('Your Grade is A+')
 
 
-# #  =================== Conditional Statement =============================
+# #  =================== Functions =============================
+# add = 0
+
+
+# def sum(a, b):
+#     add = a + b
+#     print(f"The sum of {a} and {b} is {add}")
+
+
+# sum(23, 34)
+# sum(123, 324)
+
+## using input
+# addition = 0
+
+# def sumify(a, b):
+#     add = int(a) + int(b)
+#     print(f"The sum of {a} and {b} is {add}")
+
+
+# param1 = input("Enter first number ")
+# param2 = input("Enter second number ")
+
+# sumify(param1, param2)
+
+
+## ============ Calculator ============
+
+# print("=====================================================")
+# print("============== Welcome to Solve Calci ===============")
+# print("=====================================================")
+
+
+# def sum(a, b):
+#     add = a + b
+#     print(f"The addition of {a} and {b} is {add}")
+
+
+# def sub(a, b):
+#     if a < b:
+#         minus = b - a
+#     else:
+#         minus = a - b
+#     print(f"The substraction of {a} and {b} is {minus}")
+
+
+# def div(a, b):
+#     if a < b:
+#         divv = b / a
+#     else:
+#         divv = a / b
+#     print(f"The division of {a} and {b} is {divv}")
+
+
+# def mul(a, b):
+#     pro = a * b
+#     print(f"The product of {a} and {b} is {pro}")
+
+
+# replay = True
+# while replay:
+#     param1 = input("Enter your first number : ")
+#     param2 = input("Enter your second number : ")
+#     param1 = int(param1)
+#     param2 = int(param2)
+#     print("\nFunction :")
+#     print("1. Addition")
+#     print("2. Substraction")
+#     print("3. Multiplication")
+#     print("4. Division")
+
+#     choice = input("Choose the function : ")
+#     if choice == "1":
+#         sum(param1, param2)
+#         replay = False
+#     elif choice == "2":
+#         sub(param1, param2)
+#         replay = False
+#     elif choice == "3":
+#         mul(param1, param2)
+#         replay = False
+#     elif choice == "4":
+#         div(param1, param2)
+#         replay = False
+#     else:
+#         print("Please enter number between 1 and 4")
+#         replay = True
+#     reChoice = input("Do you want to run again ? (y/n) ")
+#     if reChoice.lower() == "y":
+#         replay = True
+#     else:
+#         replay = False
+
+
+# #  =================== Lambda =============================
+
+# param1 = input("Enter first number : ")
+# param2 = input("Enter second number : ")
+
+# param1 = int(param1)
+# param2 = int(param2)
+
+# add = lambda a, b,: a + b
+# print(f"The sum is {add(param1, param2)}")
+
+# print(f"The sum is {add(10, 10)}")
+
+
+# #  =================== Class/Objects =============================
+
+
+# class MyColors:
+#     mainColor = "red"
+#     mainColor2 = "orange"
+#     textColor = "black"
+#     backgroundColor = "white"
+
+
+# print(MyColors().backgroundColor)
+# print(MyColors().textColor)
+# print(MyColors().mainColor)
+
+
+# class FontSize:
+#     def __init__(self, fontsize, fontColor, decoration):
+#         self.fontsize = fontsize
+#         self.fontColor = fontColor
+#         self.decoration = decoration
+
+
+# a1 = FontSize(12, "brown", "normal")
+# a2 = FontSize(14, "black", "bold")
+# a3 = FontSize(16, "grey", "italic")
+
+
+# print(a3.decoration)
+# print(a2.decoration)
+# print(a2.fontColor)
+
+
+# #  =================== Inheritence =============================
+
+
+# class Person:
+#     def __init__(self, fname, lname):
+#         self.firstname = fname
+#         self.lastname = lname
+
+#     def printname(self):
+#         print(self.firstname, self.lastname)
+
+
+# x = Person("Muhammad", "Rameez")
+# x.printname()
+
+
+# class Student(Person):
+#     def __init__(self, fname, lname, year):
+#         super().__init__(fname, lname)
+#         self.graduationyear = year
+
+#     def welcome(self):
+#         print(
+#             "Welcome",
+#             self.firstname,
+#             self.lastname,
+#             "to the class of",
+#             self.graduationyear,
+#         )
+
+
+# x = Student("Nasir", "Azam", 2019)
+# x.welcome()
+
+
+# #  =================== Iterator =============================
+
+
+# mystr = "banana"
+
+# for x in mystr:
+#     print(x)
+
+# #  =================== Date and Time =============================
+
+
+# import datetime as d
+
+# x = d.datetime.now()
+# print(x)
+# print(x.day)
+# print(x.date())
+
+# #  =================== Math functions =============================
+
+# import math
+
+# z = math.sqrt(64)
+# x = min(5, 10, 25)
+# y = max(5, 10, 25)
+# ax = abs(-7.25)
+# p = pow(4, 3)
+
+# print(x)
+# print(y)
+# print(ax)
+# print(p)
+# print(z)
+
+# #  =================== Json =============================
+
+## Converting Json to Python
+
+# import json
+
+# x = '{"name":"John", "age":30, "city":"New York"}'
+# student = '{"name" : "M Rameez" ,  "roll no" : 90}'
+
+
+# y = json.loads(x)
+# z = json.loads(student)
+
+# print(y["name"])
+# print(z["roll no"])
+
+## Converting Python to Json
+
+# import json
+
+# student = {"name": "M Rameez", "rollno": 90, "is_graduated": False}
+
+# x = json.dumps(student)
+
+# print(x)
+
+
+# #  =================== RegEX =============================
+
+
+# import re
+
+# #Check if the string starts with "The" and ends with "Spain":
+
+# txt = "The rain in Spain"
+# x = re.search("^The.*Spain$", txt)
+
+# txt2 = "This is Ali and now find me"
+# y = re.search("^This.*e$", txt2)
+
+# if y:
+#   print("YES! We have a match!")
+# else:
+#   print("No match")
+
+
+# #  =================== Try/Catch =============================
+
+
+try:
+    print(x)
+except:
+    print("An exception occurred")
