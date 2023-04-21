@@ -1,0 +1,14 @@
+Noun ---> Class ---> Employee
+Adj ---> Attributes ---> name ,age , salary
+Verb ---> Methods ---> getSalary(),invesment()
+
+Class Attributes: An attributes that belongs to the class rather than a particular object
+
+in 04 we do Example Of CA 
+
+Instance Attributes: An attributes that belongs to instance object
+
+in 05 we do Example Of IA
+
+instance atrributes take prefrance over class attributes 
+
