@@ -1,0 +1,22 @@
+LEFT JOIN AND RIGHT JOIN ARE TWO TYPES OF OUTER JOINS IN SQL. 
+
+A left join returns all the rows from the left table and matching rows from the right table, 
+whereas a right join returns all the rows from the right table and matching rows from the left table.
+
+When deciding whether to use a left join or a right join, you need to consider the relationships between the tables and the data you want to retrieve. 
+Here are some guidelines to help you decide which join to use:
+
+i. Use a left join when you want to retrieve all the rows from the left table and matching rows from the right table. 
+This is useful when the left table contains all the records you need, and you want to include any matching records from the right table.
+
+ii. Use a right join when you want to retrieve all the rows from the right table and matching rows from the left table. 
+This is useful when the right table contains all the records you need, and you want to include any matching records from the left table.
+
+iii. If both tables have the same data and relationship, it does not matter which join you use. 
+However, it is common practice to use a left join because it is more widely used and easier to read.
+
+iv. If you are unsure which join to use, you can use a full outer join. 
+A full outer join returns all the rows from both tables and matching rows where they exist. This will ensure that you retrieve all the data you need, but it may not be the most efficient solution.
+
+Overall, the decision to use a left join or right join depends on the data and relationships between the tables. 
+It is important to carefully consider your requirements and choose the appropriate join to retrieve the data you need.
