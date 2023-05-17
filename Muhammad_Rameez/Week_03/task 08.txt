@@ -1,0 +1,10 @@
+Blog 01 :
+
+https://dev.to/zapeeosheikh/deep-drive-sql-part-01--gmi
+
+Blog 02 : 
+
+https://dev.to/zapeeosheikh/joins-in-sql-50nk
+
+
+SQL Week is Completed

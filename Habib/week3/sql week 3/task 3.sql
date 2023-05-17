@@ -54,4 +54,3 @@ inner join Emp_Man as B on (A.C_id = B.Emp_id)
 -- Cross Join
 select * from EmployeeN Cross join Manager
 
--- Left anti-join

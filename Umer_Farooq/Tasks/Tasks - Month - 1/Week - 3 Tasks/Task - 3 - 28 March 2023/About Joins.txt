@@ -1,0 +1,42 @@
+What are Joins:
+
+In a relational database, data is distributed in multiple logical tables. 
+To get a complete meaningful set of data, you need to query data from these tables using joins.
+
+In SQL, a join operation combines rows from two or more tables based on a related column between them into a single table. 
+The common column is usally the Primary Key Field as it identifies the column. 
+The common columns are typically the Primary Key column in first table and Foriegn Key column in the second table.
+
+Joins are used to extract data from multiple tables in a single query, avoiding the need for 
+separate queries and reducing the data retrieval time.
+
+As a Data Engineer, joins are essential for data integration, data cleansing, and data transformation tasks, 
+as they enable the consolidation of data from various sources into a single database.
+
+DIFFERENCE BETWEEN SET OPERATORS OPERATION VS JOINS OPERATION:
+
+Set operators and joins are both used to combine data in SQL, but they operate in different ways and are used in different contexts.
+
+1. 
+
+-- Set operators, such as UNION, UNION ALL, INTERSECT, and EXCEPT, work on the rows of two or more tables or queries. 
+These operators combine the result sets of the queries vertically, one row at a time. 
+The resulting set of rows will have the same number of columns as the queries being combined, 
+and the columns will be ordered according to the order in the first query in the set.
+
+-- Joins, on the other hand, work on the columns of two or more tables. 
+Joins combine data horizontally across the columns of the tables being joined. 
+Joins are used to combine data from different tables based on a common column, and they can be used to join multiple tables together.
+
+The resulting set of columns in a join will depend on the columns being selected in the SELECT statement. 
+When using joins, it is important to specify which columns to include in the result set and to specify the join condition, 
+which defines how the tables will be joined.
+
+2. Summary:
+In summary, set operators combine rows vertically while joins combine data horizontally. 
+Set operators do not require common columns, while joins require at least one common column. 
+Set operators only operate on one column at a time, while joins can operate on multiple columns at a time.
+
+Set operators are row-based operations, while joins are column-based operations. 
+Set operators combine rows vertically, while joins combine columns horizontally.
+

@@ -1,0 +1,47 @@
+Joins in SQL are used to combine two or more tables into a single result set based on common columns. 
+Joins are an essential tool in SQL because they allow us to combine data from multiple tables to answer complex questions that cannot be answered with a single table.
+
+In data engineering, joins are used to combine data from different sources into a unified format that can be used for analysis and reporting. 
+They are used extensively in data warehousing and business intelligence applications to consolidate data from various systems and sources.
+
+Here are the main types of joins in SQL and their rules:
+
+Inner Join:
+
+Returns only the rows that have matching values in both tables.
+Syntax: SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column;
+Outer Join:
+
+Returns all the rows from one table and matching rows from the other table. If there are no matches, the non-matching rows are filled with NULL values.
+Syntax:
+SELECT * FROM table1 LEFT OUTER JOIN table2 ON table1.column = table2.column; (Left Outer Join)
+SELECT * FROM table1 RIGHT OUTER JOIN table2 ON table1.column = table2.column; (Right Outer Join)
+SELECT * FROM table1 FULL OUTER JOIN table2 ON table1.column = table2.column; (Full Outer Join)
+Left Join:
+
+Returns all the rows from the left table and matching rows from the right table. If there are no matches, the non-matching rows are filled with NULL values.
+Syntax: SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column;
+Right Join:
+
+Returns all the rows from the right table and matching rows from the left table. If there are no matches, the non-matching rows are filled with NULL values.
+Syntax: SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column;
+Self Join:
+
+Used to join a table to itself, typically to find relationships within the same table.
+Syntax: SELECT * FROM table1 t1 INNER JOIN table1 t2 ON t1.column = t2.column;
+Cross Join:
+
+Returns the Cartesian product of the two tables, which is all possible combinations of rows between the two tables.
+Syntax: SELECT * FROM table1 CROSS JOIN table2;
+Left Anti-Join:
+
+Returns all the rows from the left table that do not have matching rows in the right table.
+Syntax: SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column WHERE table2.column IS NULL;
+Right Anti-Join:
+
+Returns all the rows from the right table that do not have matching rows in the left table.
+Syntax: SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column WHERE table1.column IS NULL;
+
+
+In summary, joins are a powerful tool in SQL and are essential in data engineering for combining data from multiple sources into a unified format. 
+Each type of join has its specific use case, and it's important to understand the differences between them to choose the right one for a given task.
