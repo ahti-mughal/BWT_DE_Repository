@@ -1,0 +1,4 @@
+
+Blog 1 : https://medium.com/@khanbilal6172/all-sql-database-basic-concepts-for-beginners-in-just-one-place-f8a7bd38f639
+
+Blog 2: https://medium.com/@khanbilal6172/mastering-sql-learn-these-complex-fundamental-concepts-joins-subqueries-views-indexes-and-3681d4f547d7

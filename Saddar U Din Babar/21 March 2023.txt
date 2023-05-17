@@ -1,0 +1,45 @@
+Task #3
+
+What Is SQL?
+
+
+Structured Query Language (SQL) refers to a standard programming language utilized to extract, organize, 
+manage, and manipulate data stored in relational databases. SQL is thereby referred to as a database 
+language that can execute activities on databases that consist of tables made up of rows and columns.
+
+
+
+What is DDL?
+
+Data definition language (DDL) describes the portion of SQL that creates, 
+alters, and deletes database objects. These database objects include schemas, 
+tables, views, sequences, catalogs, indexes, variables, masks, permissions, and aliases.
+
+
+What is DML?
+
+DML is an abbreviation for Data Manipulation Language. Data Manipulation Language or DML 
+represents a collection of programming languages explicitly used to make changes in the 
+database, such as: CRUD operations to create, read, update, and delete data. 
+Using the INSERT, SELECT, UPDATE and Delete commands.
+
+
+What is DQL?
+
+The full form of DQL is Data Query Language. DQL is a part of the grouping involved in SQL 
+(Structures Query Language) sub-languages. The SQL sub languages have four major categories, 
+DQL, DDL, DCL, and DML.
+
+
+
+Task #4
+
+Creating a database
+ create database byteWiseDB;
+
+Altering a database:
+ alter database byteWiseDB read only = 1;
+
+Deleting a database:
+ drop database byteWiseDB;
+

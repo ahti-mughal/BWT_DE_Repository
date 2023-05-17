@@ -1,0 +1,57 @@
+Big data: 
+Now data is in massive amount, the massive amount of data which cannot be processed, store and analyzed using traditional tools is called big data.
+
+• There are three issues which arise when we handle the big data. 1.storage 2.processing and 3. analysis
+
+ 1. Storage issue: 
+After collecting the big data from different sources, we need to store it and we use data repository for this purpose. Rather than using traditional storage systems we use big data repositories which handle the big data in more better way. 
+• Some famous data repositories contains data warehouse, data lakes, lake houses, data marts, and data mesh etc
+ Data warehouse: a data warehouse is a centralised repository that store data from various sources in a structured and organised manner for business intelligence and decision making purpose.
+ Data lakes: A data lake is a large centralised repository that stores raw unstrucheted, semi structured data from various sources.Unlike data warehouse, a data lake does not require structured data models are predefined schemas.
+ Lakehouse: A Lakehouse is a hybrid architecture that combines the benefits of both data warehouse and data lakes it allows for both structured and unstructured data to coexists in a centralised repository. 
+ Data marts: A data mart is a subset of a data warehouse that contain specific subset of data that is relevant to a particular department are business unit.
+
+ 2. Processing Issue:
+Here are some common issues that may arise during big data processing and how to handle them:
+
+ Data Quality: Big data may contain errors, missing values, or outliers that can affect the accuracy of the results. To handle this issue, data cleansing techniques such as outlier detection, data imputation, and data normalization can be used to ensure the data quality.
+
+ Scalability: As the size of the data grows, processing it becomes more complex and time-consuming. To handle this issue, big data processing frameworks such as Apache Hadoop, Apache Spark, or Apache Flink can be used to distribute the processing workload across multiple machines.
+
+ Data Security: Big data processing involves handling sensitive data, so ensuring data security is essential. To handle this issue, data encryption, access control, and data anonymization techniques can be used to protect the data.
+
+ Data Integration: Big data often comes from different sources and in different formats, making it challenging to integrate. To handle this issue, data integration techniques such as ETL (Extract, Transform, Load) can be used to transform the data into a standardized format.
+
+ 3. Analysis Issue:
+Once the data has been processed, the insights are analyzed to identify patterns and trends. This can include identifying customer preferences, market trends, and potential business opportunities. 
+Remember that we can't analyse big data using old analysing tools such as excel etc so we use Python library such as Pandas numpy and other new big data analytics tools etc
+
+ Types of data:
+After discussing the issues related big data here is types of big data:
+• Structured data
+• Unstructured data
+• Semi structured data
+The data which has predefined schemas is called structured data and and data which doesn't have is called unstructured data, while semi structured data is a combination of both.
+
+ Data Pipeline: Data pipelines are used to handle big data. A data pipeline is a process that involves moving data from one system to another, transforming it, and then loading it into a database or a data warehouse. It is a sequence of steps that are followed to collect, clean, process, analyze, and visualize data.
+•  ETL and ELT are both types of data pipelines. They represent two different approaches to building a data pipeline for moving and processing data from source systems to target systems.
+
+ETL stands for Extract, Transform, Load. In an ETL pipeline, data is extracted from source systems, transformed according to predefined rules or processes, and then loaded into a target system. ETL pipelines often involve a dedicated ETL tool or platform that is used to transform the data before it is loaded into the target system.
+
+ELT, on the other hand, stands for Extract, Load, Transform. In an ELT pipeline, data is first extracted from the source systems and loaded into the target system in its raw form. The data is then transformed within the target system using specialized tools or platforms that can handle large volumes of data. ELT pipelines are often used in big data scenarios where the volume, variety, and velocity of data are high.
+
+Both ETL and ELT pipelines can be used to create an end-to-end data processing pipeline that moves and transforms data from source systems to target systems. However, the choice of which approach to use depends on a variety of factors such as the volume and variety of data, the complexity of the transformation rules, and the performance requirements of the target system.
+
+ Data Engineers:
+Data Engineer is a expert in a big data domain who handle these mentioned duties.
+A data engineer is a professional who is responsible for designing, building, testing, and maintaining the infrastructure that enables the storage, processing, and analysis of large volumes of data. They work closely with data scientists, analysts, and other stakeholders to ensure that the data is collected, stored, and processed in a way that meets the needs of the organization.
+
+ Data Engineering and it's tiers:
+We can divide the whole data engineering into three tiers.
+The three-tier data engineering architecture is a common approach to building scalable and maintainable data processing systems. This architecture separates the different layers of data processing into three distinct tiers, each with its own purpose and responsibilities.
+
+Data Ingestion Tier: The first tier is responsible for ingesting data from various sources into the system. This could include streaming data from sensors, data from APIs, or batch data from databases. The primary goal of this tier is to gather data as quickly and efficiently as possible and to store it in a raw or unprocessed format for further processing in the next tier.
+Data Processing Tier: The second tier is responsible for processing the raw data into a more refined and structured format. This tier can include tasks such as data cleaning, normalization, enrichment, and transformation. The primary goal of this tier is to prepare the data for consumption by downstream applications or analysis tools.
+Data Storage and Serving Tier: The third tier is responsible for storing and serving the processed data to downstream applications or analysis tools. This tier could include data warehousing solutions such as Hadoop or cloud-based storage solutions such as Amazon S3 or Google Cloud Storage. The primary goal of this tier is to provide a reliable and scalable storage layer for the processed data.
+
+This three-tier architecture provides several benefits, including separation of concerns, scalability, and maintainability.
