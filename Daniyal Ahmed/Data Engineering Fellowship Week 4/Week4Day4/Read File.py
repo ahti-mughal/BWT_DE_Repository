@@ -1,0 +1,5 @@
+employee_file = open("employee,txt", "r")
+employee_file.write()
+employee_file.writable()
+print(employee_file.readable())
+employee_file.close()

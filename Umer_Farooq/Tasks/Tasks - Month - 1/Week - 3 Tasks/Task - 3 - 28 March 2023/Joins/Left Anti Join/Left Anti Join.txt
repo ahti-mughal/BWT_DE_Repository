@@ -1,0 +1,13 @@
+LEFT ANTI JOIN:
+
+So far that we work on Joins such as Outer Joins, Full Join, Cross Join, Self Join are additive Joins
+that add columns to the original left table.
+
+In these Joins(Anti Joins), Right table determines which records to keep in the left table. They are used similar to WHERE clause
+where it depends on the value of second table.
+
+Left Anti Join keeps records of left table that do not match with records in right table.
+A left anti join is a type of join in SQL that returns all the rows from the left table that do not have a matching row in the right table, 
+while excluding the matching rows from the result. 
+In other words, it returns the "unmatched" rows from the left table.
+
