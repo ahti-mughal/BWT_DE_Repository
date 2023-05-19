@@ -1,0 +1,11 @@
+# IMPORTANT MODES IN FILING
+
+
+# "r" ---> open for read 
+# "w" ---> open for write 
+# "a" ---> open for append
+# "+" ---> open for read and write both 
+# "if nothing" ---> then it open for read 
+
+# "rt" open in text mode files and by default
+# "rb" open in binary mode files
