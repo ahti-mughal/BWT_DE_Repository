@@ -1,0 +1,22 @@
+Example:
+
+SELECT Categories.CategoryName, Suppliers.CompanyName
+FROM Categories
+CROSS JOIN Suppliers;
+
+We have two tables in a database called "Northwind" - Categories and Suppliers.
+
+The Categories table contains information about different product categories. 
+Each row in the Categories table represents a unique product category and has information such as 
+the category ID, category name, and a description of the category.
+
+The Suppliers table contains information about the suppliers of the products in the Categories table. 
+Each row in the Suppliers table represents a unique supplier and has information such as 
+the supplier ID, supplier name, and contact information.
+
+Now, we want to generate a report that shows all possible combinations of Categories and Suppliers.
+In other words, we want to see a report that lists all the product categories and their corresponding suppliers, 
+even if a supplier does not supply any products in a particular category.
+
+To achieve this, we can use a cross join between the Categories and Suppliers tables, which will generate a result set that contains all possible combinations of rows from both tables. 
+We can then use this result set to create the report that shows all the product categories and their corresponding suppliers.

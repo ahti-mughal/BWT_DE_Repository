@@ -1,0 +1,2 @@
+ARTICLE ON SQL
+https://medium.com/@qk.35757/journey-of-sql-volume-1-f65a98cff0a4

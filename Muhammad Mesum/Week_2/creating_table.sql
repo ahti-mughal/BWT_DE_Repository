@@ -18,9 +18,6 @@ INSERT INTO EMPLOYEES (first_name, last_name, email,salary)
 VALUES ('MUHAMMAD', 'MESUM', 'mesum@gmail.com',20000);
 GO
 
-ALTER TABLE employees
-ADD CONSTRAINT check_salary
-CHECK (salary > 0);
 
 SELECT * FROM EMPLOYEES;
 
