@@ -1,0 +1,7 @@
+# Two SQL Problems
+
+# problem 1
+select count(*) from CITY where POPULATION>100000;
+
+# problem 2
+SELECT sum(POPULATION) FROM CITY WHERE DISTRICT="California";
