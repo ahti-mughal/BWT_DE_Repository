@@ -1,0 +1,83 @@
+Task#1
+
+Simple Storage Service (S3):
+
+It is storage service that is designed to store and retrieve huge amount of data from anywhere in the world.
+It allows users to create buckets, that are logical container to store objects.
+
+
+
+
+Relational Database Service(RDS):
+
+Amazon Relational Database Service (RDS) is a managed database service provided by Amazon Web Services (AWS). 
+It allows users to create, configure, and manage relational databases in the cloud.
+
+
+
+
+
+
+GLUE:
+
+Glue provides a visual interface to help users create and manage their ETL workflows, without needing to write any code. 
+Users can use Glue's built-in transforms or create their custom transforms using Python or Scala.
+
+
+
+Redshift:
+
+Redshift provides a highly scalable and cost-effective data warehousing solution, making it an essential component of 
+many data-driven applications and analytics workflows.
+
+
+
+
+
+Identity and Access Management(IAM) Role:
+
+IAM roles provide a secure way to delegate permissions to trusted entities without sharing long-term access keys. 
+Instead, the trusted entity can assume the role temporarily to perform specific actions on behalf of the user or 
+group that created the role.
+
+
+
+Crawler:
+
+Crawler is an essential component of many data processing and analytics workflows. It can help users discover and extract 
+metadata from various data sources, making it easier to analyze and use the data for various purposes.
+
+
+
+
+
+Athena:
+
+With Athena, users can create tables and views based on their S3 data and use standard SQL to query the data. 
+They can also use various features, such as partitioning, filtering, and joins, to optimize their queries and 
+improve performance.
+
+
+
+
+
+QuickSight:
+
+It provides various features, such as data preparation, data exploration, and data analysis, to transform and analyze 
+the data, and create compelling visualizations that can help make data-driven decisions.
+
+
+
+Lambda:
+
+With Lambda, users can write their code in various programming languages such as Python, Node.js, Java, C#, and Go. 
+They can then upload their code to Lambda and define the events that will trigger its execution.
+
+
+
+
+Elastic Compute Cloud(EC2):
+
+EC2 allows users to choose from a range of pre-configured instances with varying CPU, memory, storage, and networking 
+capacity, to meet their specific requirements. Users can also create custom instances with their own specific 
+configurations. EC2 instances can be launched in various regions around the world to support global applications.
