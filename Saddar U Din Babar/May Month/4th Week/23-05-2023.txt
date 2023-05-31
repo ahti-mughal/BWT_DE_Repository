@@ -1,0 +1,52 @@
+The concept of Slowly Changing Dimensions (SCD) is a design pattern used 
+in data warehousing to handle changes to dimension data over time. 
+In a data warehouse, dimensions represent the descriptive attributes 
+of the data, such as customer, product, or location.
+
+There are different types of Slowly Changing Dimensions, which define how to handle various types of changes:
+
+SCD Type 1: In this type, the existing dimension data is overwritten with the new data. 
+	    There is no historical tracking, and only the latest information is retained. 
+	    This approach is useful when the history is not important, and the dimension 
+	    data only needs to reflect the current state.
+	    Example: Suppose you have a customer dimension table, and a customer changes 
+	    their phone number. With SCD Type 1, the existing phone number in the dimension 
+	    table would be replaced with the new phone number, and there would be no historical 
+	    record of the previous phone number.
+
+SCD Type 2: This type maintains a separate record for each change in the dimension data. 
+	    It introduces a new row for each change, along with a surrogate key and valid 
+	    time attributes. This way, historical information is preserved, and the 
+	    dimension table keeps a complete history of changes over time.
+	    Example: Consider a product dimension table, and the price of a product changes over time. 
+	    With SCD Type 2, a new row would be inserted for each price change, including the valid 
+	    start and end dates. This allows for historical analysis, as you can see the price of 
+	    the product at different points in time.
+
+SCD Type 3: Type 3 maintains limited historical information by adding a few additional columns 
+	    to the dimension table. It typically includes a small number of attributes that 
+	    need to be tracked over time, such as "previous value" or "current value" columns. 
+	    This approach is useful when only specific attributes require historical tracking, 
+	    and maintaining a full history is not required.
+	    Example: Let's say you have a department dimension table, and the department name 
+	    changes occasionally. With SCD Type 3, you would have additional columns like "previous 
+	    department name" and "current department name" in the dimension table. This way, you can 
+	    track the changes in the department names while still keeping a simplified dimension structure.
+
+SCD Type 4: This type uses a separate dimension table, known as a mini-dimension or junk dimension, 
+	    to store the changing attributes. It consolidates the changing attributes into a single table, 
+	    reducing the complexity of the main dimension table. This approach is suitable when multiple 
+	    attributes within a dimension tend to change together.
+	    Example: Suppose you have a customer dimension with various attributes like marital status, 
+	    education level, and employment status, which tend to change together. With SCD Type 4, you 
+	    can create a separate mini-dimension table containing these changing attributes. This helps 
+	    in maintaining a clean and compact main customer dimension table.
+
+
+The choice of SCD type depends on the requirements of the data warehouse and the specific dimension attributes 
+that need to be tracked over time. It is essential to select the appropriate SCD type to accurately represent 
+the historical changes in the dimension data and support effective analysis and reporting.
+
+
+
+
