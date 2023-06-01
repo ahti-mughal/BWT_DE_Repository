@@ -1,0 +1,36 @@
+Commonly used commands in Linux:
+
+
+pwd:
+	It shows current working directory
+ls: 
+	List all the contents of the directory
+cd “target location”:
+	To change directory to target location
+mkdir “taget_dir”: 
+	To create a target directory
+cat “text.txt”: 
+	To show contents of file
+head “test.txt”: 
+	To show first 10 lines of file (-n to set number of lines)
+tail “test.txt”: 
+	To show last 10 lines of file
+|: 
+	To chain multiple commands (example: cat Try.py | tail -n 3)
+grep: 
+	Use to find contents in a file and use -i to search in lowercase (grep -i "Glob" Try.py)
+sed ‘s/text/replace/1’ test.txt: 
+	Find and replace uses / as delimiter at the end put number like 2 to replace 2nd occurrence of 
+	the pattern and ‘g’ at end will replace all occurrences.
+df -h: 
+	Check disk usage -h for human readable
+whoami: 
+	Check which user is logged in
+cp current_location target._location: 
+	Copy files/folder from one location to another
+mv current_location target._location: 
+	Move files
+rm file_path: 
+	Remove files
+history: 
+	Check the terminal commands histor
